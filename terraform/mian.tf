@@ -4,7 +4,11 @@ resource "google_project_service" "services" {
     "storage.googleapis.com",
     "bigquery.googleapis.com",
     "firestore.googleapis.com",
-    "cloudresourcemanager.googleapis.com"
+    "cloudresourcemanager.googleapis.com",
+    "cloudfunctions.googleapis.com",
+    "run.googleapis.com",
+    "artifactregistry.googleapis.com",
+    "cloudbuild.googleapis.com"
   ])
 
   project            = var.project_id
